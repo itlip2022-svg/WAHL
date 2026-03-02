@@ -1140,7 +1140,7 @@ a:hover {
   margin-bottom: var(--space-xs);
 }
 
-.subpage-content a {
+.subpage-content a:not(.btn) {
   color: var(--color-primary);
   text-decoration: underline;
   text-underline-offset: 2px;
