@@ -631,6 +631,81 @@ a:hover {
   line-height: 1.7;
 }
 
+/* --- Positionspapier Section --- */
+.positions {
+  background: var(--color-surface);
+}
+
+.positions-intro {
+  margin-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+.positions-intro p {
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: var(--space-sm);
+}
+
+.positions-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.position-item {
+  display: flex;
+  gap: var(--space-lg);
+  background: var(--color-bg);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.position-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.position-number {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+  opacity: 0.8;
+  flex-shrink: 0;
+  width: 48px;
+  text-align: center;
+}
+
+.position-content h3 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.position-content p {
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .position-item {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .position-number {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+}
+
 /* --- Support Section --- */
 .support {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
